@@ -1,0 +1,90 @@
+/* Center the weather card on the page.
+Give the card some padding.
+Arrange the weather information neatly.
+Make the temperature noticeably larger.
+Style the search form and button.
+Give the page a reasonable background. */
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(169, 185, 200);
+}
+
+#weather-display {
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+    min-height: 300px;
+    background-color: rgb(166, 207, 230);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.container1 {
+    place-self: start;
+}
+
+.container2 {
+    grid-column: span 2;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#unit-toggle {
+    grid-column: span 2;
+    place-self: end;
+    width: max-content;
+    height: max-content;
+}
+
+#loading,
+#error-message {
+    grid-column: span 2;
+    text-align: center;
+    width: 100%;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#location {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#weather-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#weather-icon {
+    font-size: 3rem;
+}
+
+#search-location{
+  padding: 8px 13px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-right: none;         
+  border-radius: 4px;  
+  outline: none;              
+  width: 200px;                
+}
+
+#weather-form > button {
+    padding: 4px 10px;
+    outline: none; 
+}

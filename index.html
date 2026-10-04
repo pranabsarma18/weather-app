@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1 class="app-title">Weather App</h1>
+    <div id="weather-display">
+
+        <div class="container1">
+            <form id="weather-form">
+                <input type="text" id="search-location" placeholder="Enter a location">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div id="weather-icon"></div>
+
+        <!-- your elements here -->
+        <div id="error-message"></div>
+        <div id="loading">Loading...</div>
+
+        <div class="container2">
+            <div id="location"></div>
+            <div id="weather-time"></div>
+            <div id="temperature"></div>
+            <div id="feels-like"></div>
+            <div id="conditions"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+        </div>
+        <button id="unit-toggle" disabled>Show in °F</button>
+
+    </div>
+</body>
+</html>
